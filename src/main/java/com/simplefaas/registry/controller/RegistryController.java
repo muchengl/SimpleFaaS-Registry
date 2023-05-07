@@ -41,6 +41,8 @@ public class RegistryController {
 
         List<ServerStatus> serverList=servers.status;
 
+
+        System.out.println("Return List:"+JSON.toJSONString(serverList));
         return JSON.toJSONString(serverList);
 
     }
