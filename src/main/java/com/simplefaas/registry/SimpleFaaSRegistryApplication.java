@@ -7,7 +7,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SimpleFaaSRegistryApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(SimpleFaaSRegistryApplication.class, args);
+
+
+
+
+        // 启动定期删除过期server线程
+
     }
 
 }
