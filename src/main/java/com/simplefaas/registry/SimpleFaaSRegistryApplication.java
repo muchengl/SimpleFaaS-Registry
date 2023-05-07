@@ -42,7 +42,7 @@ public class SimpleFaaSRegistryApplication {
                     }
 
                     try {
-                        Thread.sleep(5);
+                        Thread.sleep(5*1000);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
