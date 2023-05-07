@@ -31,7 +31,7 @@ public class ServerStatusTimeStamp {
         return servers;
     }
 
-    public void update(ServerStatus status){
+    public void add_update(ServerStatus status){
         // 避免更新过程中，线程删除了对象
         synchronized (ServerStatusTimeStamp.class) {
             String ip = status.getHost_ip();
@@ -44,5 +44,8 @@ public class ServerStatusTimeStamp {
             }
         }
     }
+
+
+
 
 }
